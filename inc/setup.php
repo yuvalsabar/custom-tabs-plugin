@@ -15,6 +15,9 @@ function ct_init() {
 	load_plugin_textdomain( 'custom-tabs-plugin', false, dirname( plugin_basename( CUSTOM_TABS_PLUGIN_DIR ) ) . '/languages' );
 	ct_include_acf();
 	require_once CUSTOM_TABS_PLUGIN_DIR . 'inc/admin.php';
+	require_once CUSTOM_TABS_PLUGIN_DIR . 'inc/cpt.php';
+	require_once CUSTOM_TABS_PLUGIN_DIR . 'inc/fields.php';
+	require_once CUSTOM_TABS_PLUGIN_DIR . 'inc/shortcode.php';
 }
 
 /**

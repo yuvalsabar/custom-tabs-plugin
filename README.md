@@ -1,4 +1,4 @@
-# Starter Plugin
+# Custom Tabs Plugin Plugin
 
 This plugin includes an embedded copy of ACF and provides a settings page with local ACF field registration.
 
