@@ -1,0 +1,15 @@
+{
+  "name": "starter-plugin",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.27.14",
+    "concurrently": "^8.2.0",
+    "sass": "^1.83.0"
+  },
+  "scripts": {
+    "build:sass": "sass assets/scss:assets/css --no-source-map",
+    "watch:sass": "sass --watch assets/scss:assets/css --no-source-map",
+    "watch:browser": "browser-sync start --proxy \"${BROWSER_SYNC_PROXY:-http://localhost:8888}\" --files \"assets/css/**/*.css, **/*.php\" --no-ui --no-online",
+    "watch": "concurrently \"npm run watch:sass\" \"npm run watch:browser\""
+  }
+}
